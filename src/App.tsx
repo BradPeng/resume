@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          installed TypeScript!
+          Changed to typescript!
         </p>
         <a
           className="App-link"
