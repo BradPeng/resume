@@ -8,42 +8,41 @@ import React from 'react';
 
 function Home() {
   return (
-      <>
-      </>
-    // <Container style={{ marginTop: 112 }}>
-    //   <Grid container spacing={5}>
-    //     {/* Videos section */}
-    //     <Grid item xs={12}>
-    //       <Grid container spacing={3} direction="column">
-    //         {/* Header: Video */}
-    //         <Grid item xs={12}>
-    //           <Typography variant="h4" component="h4" className="heading">
-    //             Videos
-    //           </Typography>
-    //         </Grid>
-    //         {/* Video scroll section */}
-    //         <Grid item xs={12}>
-    //           <VideoGridList />
-    //         </Grid>
-    //       </Grid>
-    //     </Grid>
-    //     {/* Documents section */}
-    //     <Grid item xs={12}>
-    //       <Grid container spacing={3}>
-    //         {/* Header: Documentations */}
-    //         <Grid item xs={12}>
-    //           <Typography variant="h4" component="h4" className="heading">
-    //             Documentations
-    //           </Typography>
-    //         </Grid>
-    //         {/* Document Cards Section */}
-    //         <Grid item xs={12}>
-    //           <DocumentCard></DocumentCard>
-    //         </Grid>
-    //       </Grid>
-    //     </Grid>
-    //   </Grid>
-    // </Container>
+     
+    <Container style={{ marginTop: 112 }}>
+      <Grid container spacing={5}>
+        {/* Videos section */}
+        <Grid item xs={12}>
+          <Grid container spacing={3} direction="column">
+            {/* Header: Video */}
+            <Grid item xs={12}>
+              <Typography variant="h4" component="h4" className="heading">
+                Videos
+              </Typography>
+            </Grid>
+            {/* Video scroll section */}
+            <Grid item xs={12}>
+              {/* <VideoGridList /> */}
+            </Grid>
+          </Grid>
+        </Grid>
+        {/* Documents section */}
+        <Grid item xs={12}>
+          <Grid container spacing={3}>
+            {/* Header: Documentations */}
+            <Grid item xs={12}>
+              <Typography variant="h4" component="h4" className="heading">
+                Documentations
+              </Typography>
+            </Grid>
+            {/* Document Cards Section */}
+            <Grid item xs={12}>
+              {/* <DocumentCard></DocumentCard> */}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 

@@ -28,53 +28,55 @@ function Language() {
   const classes = useStyles();
 
   return (
-      <>
-      </>
-    // <Container style={{ marginTop: 112 }}>
-    //   <Grid container spacing={5}>
-    //     {/* Title and subtitle section */}
-    //     <Grid item xs={12}>
-    //       <Grid container spacing={1}>
-    //         {/* Header: JavaScript */}
-    //         <Grid item xs={12}>
-    //           <Typography variant="h4">JavaScript</Typography>
-    //         </Grid>
-    //         {/* Subtitle: JavaScript description */}
-    //         <Grid item xs={12}>
-    //           <Typography variant="subtitle1">
-    //             JavaScript is a programming language initially designed to interact with elements of webpages.
-    //           </Typography>
-    //         </Grid>
-    //       </Grid>
-    //     </Grid>
-    //     {/* Table section */}
-    //     <Grid item xs={12}>
-    //       <Grid container spacing={2}>
-    //         {/* Table header */}
-    //         <Grid item xs={12}>
-    //           <Typography variant="h5">JavaScript basic data types</Typography>
-    //         </Grid>
-    //         {/* Table contents */}
-    //         <Grid item xs={12}>
-    //           <JavaScript_Data_Type_Table />
-    //         </Grid>
-    //       </Grid>
-    //     </Grid>
-    //     {/* Frequent Functions Section */}
-    //     <Grid item xs={12}>
-    //       <Grid container spacing={2}>
-    //         {/* Header: Frequently used array functions */}
-    //         <Grid item xs={12}>
-    //           <Typography variant="h5">Frequently used array functions</Typography>
-    //         </Grid>
-    //         {/* Language Card Section */}
-    //         <Grid item xs={12}>
-    //           <Language_Card></Language_Card>
-    //         </Grid>
-    //       </Grid>
-    //     </Grid>
-    //   </Grid>
-    // </Container>
+//       <div>
+//         <p>       hey languages
+// </p>
+//       </div>
+    <Container style={{ marginTop: 112 }}>
+      <Grid container spacing={5}>
+        {/* Title and subtitle section */}
+        <Grid item xs={12}>
+          <Grid container spacing={1}>
+            {/* Header: JavaScript */}
+            <Grid item xs={12}>
+              <Typography variant="h4">JavaScript</Typography>
+            </Grid>
+            {/* Subtitle: JavaScript description */}
+            <Grid item xs={12}>
+              <Typography variant="subtitle1">
+                JavaScript is a programming language initially designed to interact with elements of webpages.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+        {/* Table section */}
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            {/* Table header */}
+            <Grid item xs={12}>
+              <Typography variant="h5">JavaScript basic data types</Typography>
+            </Grid>
+            {/* Table contents */}
+            <Grid item xs={12}>
+              {/* <JavaScript_Data_Type_Table /> */}
+            </Grid>
+          </Grid>
+        </Grid>
+        {/* Frequent Functions Section */}
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            {/* Header: Frequently used array functions */}
+            <Grid item xs={12}>
+              <Typography variant="h5">Frequently used array functions</Typography>
+            </Grid>
+            {/* Language Card Section */}
+            <Grid item xs={12}>
+              {/* <Language_Card></Language_Card> */}
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 
