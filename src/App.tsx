@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Added Styled components!
+          Added Material UI and its dependencies!
         </p>
         <a
           className="App-link"
