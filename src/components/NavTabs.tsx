@@ -6,7 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
-import AboutMe from './Home/AboutMe';
+import AboutMe from './AboutMe/AboutMe';
 import Language from './PersonalProjects/PersonalProjects';
 import contact from './contact/contact';
 
@@ -62,12 +62,14 @@ export default function NavTabs() {
     <div className={classes.root} style={{ backgroundColor: '#F2F2F2' }}>
       <Grid container spacing={0}>
         <Grid item xs={12}>
-          <AppBar position="fixed" style={{ top: 64, background: '#FFFFFF', color: '#1776D2', boxShadow: 'none' }}>
+          <AppBar position="fixed" style={{ top: 64, background: '#FFFFFF', color: '#1776D2', boxShadow: 'none', display: "flex", justifyContent: "center" }}>
             <Tabs
               TabIndicatorProps={{ style: { background: '#1776D2' } }}
               value={value}
               onChange={handleChange}
               aria-label="simple tabs example"
+              centered
+              variant='fullWidth'
             >
               <Tab label="About Me" {...a11yProps(0)} />
               <Tab label="Personal Projects" {...a11yProps(1)} />

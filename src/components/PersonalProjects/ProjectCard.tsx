@@ -27,7 +27,7 @@ const ArrayFunctionList = [
     name: "Game of Apps Website",
     subtitle: "Internship Product, Summer 2020",
     description:
-      "The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.",
+      "A website built using HTML, CSS, React and TypeScript during an internship position in the summer of 2020.",
     link:
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
   },
@@ -36,7 +36,7 @@ const ArrayFunctionList = [
     name: "Space Shooter",
     subtitle: "Game Maker Studio 2 Project, February 2021",
     description:
-      "The filter() method creates a new array with all elements that pass the test implemented by the provided function",
+      "A Basic 2D shooting game built using Game Maker Studio 2 and the Game Maker Language.",
     link:
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter",
   },
@@ -45,12 +45,11 @@ const ArrayFunctionList = [
     name: "Reminder App",
     subtitle: "Java Project, September 2020 - December 2020",
     description:
-      "The slice() method returns a shallow copy of a portion of an array into a new array object selected",
+      "A small app used to keep track of reminders built using Java for my UBC CPSC 210 course's term project.",
     link:
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice",
   },
 ];
-// style={{display: "flex", justifyContent: "space-between"}}
 export default function Language_Card() {
   const classes = useStyles();
 

@@ -11,7 +11,7 @@ function App() {
         <Grid item xs={12}>
           <App_Bar />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{display:"flex", justifyContent: "center"}}>
           <NavTabs />
         </Grid>
       </Grid>
