@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 // import JavaScript_Data_Type_Table from './Language_Components/JavaScript_Data_Type_Table';
 // import Language_Card from './Language_Components/Language_Cards/Language_Cards';
+import ProjectCard from './ProjectCard';
 
 const useStyles = makeStyles({
   table: {
@@ -28,12 +29,13 @@ function Language() {
   const classes = useStyles();
 
   return (
-//       <div>
-//         <p>       hey languages
-// </p>
-//       </div>
     <Container style={{ marginTop: 112 }}>
+
+              <ProjectCard/>
+
+
       <Grid container spacing={5}>
+        
         {/* Title and subtitle section */}
         <Grid item xs={12}>
           <Grid container spacing={1}>
@@ -41,6 +43,7 @@ function Language() {
             <Grid item xs={12}>
               <Typography variant="h4">JavaScript</Typography>
             </Grid>
+          
             {/* Subtitle: JavaScript description */}
             <Grid item xs={12}>
               <Typography variant="subtitle1">

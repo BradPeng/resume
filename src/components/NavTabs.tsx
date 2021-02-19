@@ -6,8 +6,9 @@ import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
-import Home from './Home/Home';
-import Language from './Language/Language';
+import AboutMe from './Home/AboutMe';
+import Language from './PersonalProjects/PersonalProjects';
+import contact from './contact/contact';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -68,17 +69,21 @@ export default function NavTabs() {
               onChange={handleChange}
               aria-label="simple tabs example"
             >
-              <Tab label="Home" {...a11yProps(0)} />
-              <Tab label="Language" {...a11yProps(1)} />
+              <Tab label="About Me" {...a11yProps(0)} />
+              <Tab label="Personal Projects" {...a11yProps(1)} />
+              <Tab label= "Contact Information" />
             </Tabs>
           </AppBar>
         </Grid>
         <Grid item xs={12}>
           <TabPanel value={value} index={0}>
-            {Home()}
+            {AboutMe()}
           </TabPanel>
           <TabPanel value={value} index={1}>
             {Language()}
+          </TabPanel>
+          <TabPanel value = {value} index={2}>
+            {contact()}
           </TabPanel>
         </Grid>
       </Grid>

@@ -6,7 +6,7 @@ import React from 'react';
 // import DocumentCard from './Home_Components/Document_Cards/Document_Cards';
 // import VideoGridList from './Home_Components/Document_Videos/Document_Videos';
 
-function Home() {
+function AboutMe() {
   return (
      
     <Container style={{ marginTop: 112 }}>
@@ -46,4 +46,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AboutMe;
