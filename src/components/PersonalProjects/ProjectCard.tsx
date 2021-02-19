@@ -14,8 +14,8 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 350,
     //   maxHeight: 700,
-    marginBottom: 50,
-    height: 700,
+    //marginBottom: 50,
+    height: 650,
   },
   media: {
     height: 309,
@@ -43,7 +43,7 @@ const ArrayFunctionList = [
   },
   {
     img: image1,
-    name: "Reminder Management System",
+    name: "Reminder App",
     subtitle: "Java Project, September 2020 - December 2020",
     description:
       "The slice() method returns a shallow copy of a portion of an array into a new array object selected",
@@ -73,20 +73,20 @@ export default function Language_Card() {
         >
           {ArrayFunctionList.map((element) => (
             <Grid item>
-              <a target="_blank" href={element.link}>
-                <Card
-                  className={classes.root}
-                  variant="outlined"
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    marginRight: 8,
-                    flexWrap: "nowrap",
-                    flexDirection: "column",
-                  }}
-                  id="roundCorner"
-                >
-                  <CardActionArea>
+              {/* href={element.link} */}
+              <CardActionArea>
+                <a target="_blank">
+                  <Card
+                    className={classes.root}
+                    variant="outlined"
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      flexWrap: "nowrap",
+                      flexDirection: "column",
+                    }}
+                    id="roundCorner"
+                  >
                     {/* Card Image */}
                     <CardMedia
                       className={classes.media}
@@ -94,47 +94,56 @@ export default function Language_Card() {
                       title={element.name}
                     />
                     {/* Card Text and Button */}
-                    <CardContent style={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                    marginRight: 8,
-                    flexWrap: "nowrap",
-                    flexDirection: "column",
-                  }}> 
-                      <Typography gutterBottom variant="h4" component="h2" style={{height: "130px"}}>
-                        {element.name}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        color="textSecondary"
-                        component="p"
-                      >
-                        {element.subtitle}
-                      </Typography>
-                      <Typography
-                        variant="body1"
-                        color="textSecondary"
-                        component="p"
-                        style={{ height: 70 }}
-                      >
-                        {element.description}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button
-                      size="medium"
+                    <CardContent
                       style={{
-                        marginTop: 10,
-                        marginBottom: 10,
-                        color: "#1776D2",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        marginRight: 8,
+                        flexWrap: "nowrap",
+                        flexDirection: "column",
                       }}
                     >
-                      Read More
-                    </Button>
-                  </CardActions>
-                </Card>
-              </a>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "flex-start",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <Typography gutterBottom variant="h4" component="h2" style={{height: "82px"}}>
+                          {element.name}
+                        </Typography>
+                        <Typography
+                          variant="body1"
+                          color="textSecondary"
+                          component="p"
+                        >
+                          {element.subtitle}
+                        </Typography>
+                        <Typography
+                          variant="body1"
+                          color="textSecondary"
+                          component="p"
+                        >
+                          {element.description}
+                        </Typography>
+                      </div>
+                    </CardContent>
+                    <CardActions>
+                      <Button
+                        size="medium"
+                        style={{
+                          marginTop: 10,
+                          marginBottom: 10,
+                          color: "#1776D2",
+                        }}
+                      >
+                        Read More
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </a>
+              </CardActionArea>
             </Grid>
           ))}
         </Grid>
