@@ -14,7 +14,6 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 350,
     //   maxHeight: 700,
-    //marginBottom: 50,
     height: 650,
   },
   media: {
@@ -26,7 +25,7 @@ const ArrayFunctionList = [
   {
     img: image1,
     name: "Game of Apps Website",
-    subtitle: "Website Project, Summer 2020",
+    subtitle: "Internship Product, Summer 2020",
     description:
       "The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.",
     link:
@@ -101,25 +100,43 @@ export default function Language_Card() {
                         marginRight: 8,
                         flexWrap: "nowrap",
                         flexDirection: "column",
+                        alignItems: "baseline",
                       }}
                     >
                       <div
                         style={{
                           display: "flex",
-                          justifyContent: "flex-start",
+                          justifyContent: "space-between",
                           flexDirection: "column",
+                          alignItems: "baseline",
                         }}
                       >
-                        <Typography gutterBottom variant="h4" component="h2" style={{height: "82px"}}>
-                          {element.name}
-                        </Typography>
-                        <Typography
-                          variant="body1"
-                          color="textSecondary"
-                          component="p"
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            flexDirection: "column",
+                            alignItems: "top",
+                            height: "150px",
+                          }}
                         >
-                          {element.subtitle}
-                        </Typography>
+                          <Typography
+                            gutterBottom
+                            variant="h4"
+                            component="h2"
+                            style={{}}
+                          >
+                            {element.name}
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            color="textSecondary"
+                            component="p"
+                            style={{ paddingBottom: "20px" }}
+                          >
+                            {element.subtitle}
+                          </Typography>
+                        </div>
                         <Typography
                           variant="body1"
                           color="textSecondary"
