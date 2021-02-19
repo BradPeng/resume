@@ -3,8 +3,6 @@ import { Typography } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import React from 'react';
-// import DocumentCard from './Home_Components/Document_Cards/Document_Cards';
-// import VideoGridList from './Home_Components/Document_Videos/Document_Videos';
 
 function AboutMe() {
   return (

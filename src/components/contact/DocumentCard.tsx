@@ -5,8 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
-import image1 from '../images/business_cover.jpg';
-import Read_More_Button from './ReadMoreButton';
+import image1 from '../../images/business_cover.jpg';
+import Read_More_Button from '../ReadMoreButton';
 
 const useStyles = makeStyles({
   root: {

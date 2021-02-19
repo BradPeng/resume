@@ -2,7 +2,7 @@ import { Container, Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import DocumentCard from "../DocumentCard";
+import DocumentCard from "./DocumentCard";
 
 function contact() {
   return (
